@@ -23,11 +23,16 @@ public class Main {
             System.out.println(j+" - "+i+" = "+(j-i));
         }
 
-        i = (int) (Math.random() * (100 - 1));
-        j = (int) (Math.random() * (2));
-
-        System.out.println(j+"  "+i+" = "+(""));
-
+        i = (int) (Math.random() * (10 - 1));
+        j = (int) (Math.random() * (10-1));
+        if(i==0) {
+            i=i+1;
+            int k = i * j;
+            System.out.println(k + " / " + i + " = " + (j));
+        }else {
+            int k = i * j;
+            System.out.println(k + " / " + i + " = " + (j));
+        }
     }
 
 
